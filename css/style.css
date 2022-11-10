@@ -1,0 +1,262 @@
+
+@media (max-width: 1024px) {
+   .image_question {
+      width: 60%;
+   }
+   .question {
+      width: 100%;
+   }
+}
+
+@media (max-width: 767px) {
+   .title {
+      font-size: 14px;
+   }
+   .image {
+      max-width: 300px;
+      height: 102px;
+   }
+}
+
+@media (max-width: 600px) {
+   .answers {
+      grid-template-columns: 1fr;
+   }
+}
+
+@media (max-width: 500px) {
+   .image_question {
+      width: 100%;
+      margin-right: 0px;
+   }
+}
+.intro {
+   max-width: 1000px;
+   padding: 40px;
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #ffffff;
+   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.image {
+   position: relative;
+   max-width: 560px;
+   height: 202px;
+   margin: 10px 0px 40px 0px;
+}
+
+
+.total-number {
+   padding-bottom: 15px;
+   width: 100%;
+   text-align: center;
+   font-size: 26px;
+   letter-spacing: 1px;
+   font-weight: 700;
+   color: orange;
+   position: relative;
+}
+.title {
+   font-family: serif;
+   font-size: 30px;
+   color: orange;
+   letter-spacing: 0.8px;
+   line-height: 46px;
+}
+
+.start {
+   padding: 20px 50px;
+   border-radius: 100px;
+   font-size: 30px;
+   font-weight: 700;
+   color: white;
+   background-color: orange;
+   cursor: pointer;
+   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.start:hover {
+   background-color: orange;
+}
+
+.questions {
+   max-width: 1000px;
+   padding: 20px 30px;
+   border-radius: 8px;
+   display: none;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   background-color: #ffffff;
+   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.question {
+   width: 50%;
+   font-size: 30px;
+   font-family: monospace;
+   color: orange;
+   letter-spacing: 2px;
+   font-weight: 700;
+   padding-left: 30px;
+}
+
+.answers {
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 30px;
+   text-align: center;
+   padding: 30px;
+   border-radius: 100px;
+}
+
+.answers.disable .answer {
+   pointer-events: none;
+}
+
+.answer {
+   border-radius: 100px;
+   font-size: 22px;
+   color: orange;
+   letter-spacing: 1px;
+   font-weight: 700;
+   border: 1px solid orange;
+   padding: 5px 0px;
+   cursor: pointer;
+   position: relative;
+}
+
+.wrapper {
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   z-index: 10;
+}
+.total-number::before {
+   content: "";
+   position: absolute;
+   bottom: 4px;
+   left: 50%;
+   width: 250px;
+   height: 2px;
+   transform: translateX(-50%);
+   background-color: orange;
+}
+
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   padding-top: 30px;
+}
+
+.image_question {
+   width: 45%;
+   margin-right: 20px;
+   overflow: hidden;
+   border-radius: 10px;
+}
+
+.image_question img {
+   border-radius: 10px;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+button {
+   border: none;
+   background-color: inherit;
+}
+
+img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+.correct::before {
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 128, 0, 50%);
+   border-radius: 100px;
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+ 
+}
+
+.wrong::before {
+   width: 100%;
+   height: 100%;
+   background-color: rgba(128, 0, 0, 50%);
+   border-radius: 100px;
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+
+}
+
+.answer:hover {
+   background-color: rgba(255, 166, 0, 0.493);
+}
+
+.button_question {
+   font-weight: 700;
+   border: 2px solid orange;
+   border-radius: 100px;
+   padding: 5px 0px;
+   width: 30%;
+   font-size: 22px;
+   color: orange;
+   letter-spacing: 1px;
+   cursor: pointer;
+}
+
+.button_question:hover {
+   background-color: orange;
+   color: white;
+}
+
+.end {
+   border-radius: 8px;
+   display: none;
+   flex-direction: column;
+   padding: 40px;
+   align-items: center;
+   background-color: #ffffff;
+   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);}
+.end_text {
+   text-align: center;
+   font-family: serif;
+   font-size: 30px;
+   color: orange;
+   margin-bottom: 30px;
+}
+
+.end_button {
+   font-weight: 700;
+   border: 2px solid orange;
+   border-radius: 100px;
+   padding: 10px 20px;
+   cursor: pointer;
+   font-size: 22px;
+   color: orange;
+   letter-spacing: 1px;
+}
+
+.end_button:hover {
+   background-color: orange;
+   color: white;
+}
